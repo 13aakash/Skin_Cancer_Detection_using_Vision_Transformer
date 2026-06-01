@@ -1,0 +1,19 @@
+{
+    "model": "ViT-B/16 (timm, ImageNet-21k)",
+    "task": "Binary \u2014 Benign vs Malignant",
+    "dataset": "HAM10000 \u2014 10015 images",
+    "split": "70/15/15 stratified",
+    "test_accuracy": "91.08%",
+    "macro_f1": "0.8583",
+    "weighted_f1": "0.9110",
+    "malignant_recall": "77.47%",
+    "malignant_precision": "76.95%",
+    "benign_recall": "94.38%",
+    "auc_roc": "0.9483",
+    "tta_passes": 3,
+    "saved_by": "Best malignant recall on val set",
+    "unfreeze_from": "Block 6",
+    "optimizer": "AdamW lr=0.0001",
+    "label_smoothing": 0.1,
+    "mixup_alpha": 0.2
+}
